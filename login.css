@@ -6,8 +6,10 @@ body{
     background-image: /* linear-gradient(90deg, #feb2ed33, #0ed2f71c),*/ url(img/fundal.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
-    overflow: hidden;
+    height: 100%;
+    overflow: visible;
+    margin:0%;
+    padding:0%;
 }
 
 #loginForm{
@@ -71,9 +73,10 @@ body{
 }
 
 .motto{
-    background: none;
+    background: transparent;
     font-weight: bold;
     color: white;
+    margin:3%;
 }
 
 .box::before{

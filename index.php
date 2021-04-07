@@ -42,7 +42,7 @@
 		<div class="left">
 			<ul>
 				<li><a href="index.php">
-						<i class="far fa-building"></i> Hotel name</a></li>
+						<i class="far fa-building"></i> Waypoint hotel</a></li>
 			</ul>
 		</div>
 		<div class="right">
@@ -52,12 +52,12 @@
 						if (isset($_SESSION['username']))
 						{
 
-							echo "<p style='margin-right: 15px; font-size: 20px; color:white;'>";
+							echo "<p style='margin-right: 15px; font-size: 20px; cursor:pointer; color:white;'>";
 							echo $_SESSION['username'];
    							echo " <i class='fas fa-user-alt' style='font-size: 30px;''></i><i class='fas fa-chevron-down'></i></i></p>
    							<div class='dropdown'>
 								<ul >
-									<li><a href='#' ><i class='fas fa-user-alt'></i> Profile</a></li>
+									
 									<li><a href='orders/myOrders.php'><i class='fas fa-shopping-basket'></i> Orders</a></li>
 									<li><a href='Rooms/rooms.php'>
 										<i class='fas fa-bed'></i> Rooms</a></li>
@@ -92,7 +92,7 @@
 						modern, forward thinking global leader of hospitality and we help make traveling easier with our
 						smart design, innovative restaurant concepts, unique activities, nature and authentic
 						hospitality.</p>
-					<p class="animated fadeIn" style="animation-delay: 3s"><a href="#">More Info</a></p>
+					
 				</div>
 			</div>
 			<div class="carousel-item second-slide">
@@ -104,7 +104,7 @@
 						culinary delights from our award winning chef’s. Whether you visit as a hotel guest, conference
 						delegate or joining us with friends or family for an Afternoon Tea, you’ll find our contemporary
 						restaurants and lounge area to be the perfect place to relax</p>
-					<p class="animated zoomIn" style="animation-delay: 3s"><a href="#">More Info</a></p>
+					
 				</div>
 			</div>
 			<div class="carousel-item third-slide">
@@ -115,7 +115,7 @@
 					<p class="animated fadeInLeft" style="animation-delay: 2s">We provide a bunch of different offers
 						that may be of an interest to your. At our hotels we will find you any type of entertainment
 						taking into account your wishes./p>
-					<p class="animated zoomIn" style="animation-delay: 3s"><a href="#">More Info</a></p>
+					
 				</div>
 			</div>
 		</div><a class="carousel-control-prev" data-slide="prev" href="#carouselExampleIndicators" role="button"><span
@@ -290,43 +290,23 @@
 	<script>
 		function acces_room1()
 		{
-			var tst="<?php echo $ac; ?>";
-			if (tst==true)
-			{	
-				window.location.href="index.php?active='1'";
-			}
-			else
-			{
+			
 				window.location.href="Rooms/Room1/room1.php";
-			}
 			
 		}
 		function acces_room2()
 		{
 			
-			var tst="<?php echo $ac; ?>";
-			if (tst==true)
-			{	
-				window.location.href="index.php?active='1'";
-			}
-			else
-			{
+			
 				window.location.href='Rooms/Room2/room2.php';
-			}
 			
 		}
 		function acces_room3()
 		{
 			
-			var tst="<?php echo $ac; ?>";
-			if (tst==true)
-			{	
-				window.location.href="index.php?active='1'";
-			}
-			else
-			{
+			
 				window.location.href='Rooms/Room3/room3.php';
-			}
+			
 			
 		}
 
