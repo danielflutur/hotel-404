@@ -48,7 +48,7 @@
       <div class="left">
         <ul>
           <li><a href="../../index.php">
-              <i class="far fa-building"></i> Hotel name</a></li>
+              <i class="far fa-building"></i> Waypoint hotel</a></li>
         </ul>
       </div>
       <div class="right">
@@ -57,12 +57,12 @@
           <?php
             if (isset($_SESSION['username']))
             {
-              echo "<p style='margin-right: 15px; font-size: 20px; cursor:pointer;'>";
-              echo $_SESSION['username']; 
+              echo "<p style='margin-right: 15px; font-size: 20px; cursor:pointer; color:white;'>";
+              echo $_SESSION['username'];
                 echo " <i class='fas fa-user-alt' style='font-size: 30px;''></i><i class='fas fa-chevron-down'></i></i></p>
                 <div class='dropdown'>
                 <ul>
-                  <li><a href='#' ><i class='fas fa-user-alt'></i> Profile</a></li>
+                  
                   <li><a href='../../orders/myOrders.php'><i class='fas fa-shopping-basket'></i> Orders</a></li>
                   <li><a href='../rooms.php'>
                     <i class='fas fa-bed'></i> Rooms</a></li>
@@ -107,10 +107,11 @@
             <i class="d-block fa fa-circle fa-3x mb-2 text-muted"></i>
             <h1 contenteditable="true">Room description</h1>
             <p class="lead">
-              I hear the buzz of the little world among the stalks, and grow familiar with the countless
-              indescribable forms of the insects and flies
+              A single room is a room intended for one person to stay in. Choose from
+                twin or single rooms, all of which are comfortable. Each guest has her own single room,
+                or shares a double room.
             </p>
-            <div class="form-group"><label>Label</label></div>
+            <div class="form-group"><label>Single Room</label></div>
           </div>
         </div>
       </div>
@@ -140,14 +141,14 @@
                 if($total != 0)
                 {
                   echo "
-                    <div class='form-group' style='transform: translateY(-5px);'>
-                      <label class='m-0'>Available Room</label>";
+                    <div class='form-group' style='transform: translateY(+5px);'>
+                      <label class='m-0'>Available Room</label><br>";
                   if($result=mysqli_fetch_assoc($data))
                   {
                       echo "<input type='text' value='". $result['roomNumber']."'class=form-control' id='form6' name='room_nr' required>
                     </div>
-                    <div class='form-group' style='transform: translateY(-5px);'>
-                      <label class='m-0'>Price</label>
+                    <div class='form-group' style='transform: translateY(+25px);'>
+                      <label class='m-0'>Price</label><br>
                       <input type='text' value='". $result['price']."'class=form-control' id='form6' name='price' required>
                     </div>";
                   
@@ -192,8 +193,13 @@
                 $query1="UPDATE rooms SET status='$st' WHERE roomNumber='$rn'";
                 $data=mysqli_query($con, $query);
                 $data1=mysqli_query($con, $query1);
-                echo '<meta http-equiv="refresh" content="0; URL=../../orders/myOrders.html">';
+                echo '<meta http-equiv="refresh" content="0; URL=../../orders/myOrders.php">';
               }
+              else
+            {
+              echo "<script>alert('No rooms available!')</script>";
+              echo '<meta http-equiv="refresh" content="0; URL=room1.php">';
+            }
             
         }
         else

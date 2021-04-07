@@ -53,7 +53,7 @@
    							echo " <i class='fas fa-user-alt' style='font-size: 30px;''></i><i class='fas fa-chevron-down'></i></i></p>
    							<div class='dropdown'>
 								<ul>
-									<li><a href='#' ><i class='fas fa-user-alt'></i> Profile</a></li>
+									
 									<li><a href='../orders/myOrders.php'><i class='fas fa-shopping-basket'></i> Orders</a></li>
 									<li><a href='rooms.php'>
 										<i class='fas fa-bed'></i> Rooms</a></li>
