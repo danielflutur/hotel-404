@@ -6,7 +6,7 @@
 	$roomNo=$_GET['rn'];
 	$query= "DELETE FROM rooms WHERE roomNumber='$roomNo'";
 
-	$data=mysqli_query($conn,$query);
+	$data=mysqli_query($con,$query);
 
 	if($data)
 	{
