@@ -1,2 +1,3 @@
 #Error404
-This app belongs to team Error404.
+
+This hotel managing web app belonging to team Error404.
