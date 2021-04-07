@@ -42,14 +42,15 @@
         <div class="name">
             <h4>Waypoint Hotel</h4>
             <?php 
-                echo "<h6>".$_SESSION['username']."</h6>"; 
+                echo "<h6><i class='far fa-user-circle'></i>".$_SESSION['username']."</h6>"; 
             ?>
         </div>
         <ul class="links">
-            <li class="button"><a href="../Admin/AdminRooms.php">Rooms</a></li>
-            <li><a href="../Admin/AdminOrders.php">Orders</a></li>
-            <li><a href="../Admin/AdminManageAccounts.php">Manage accounts</a></li>
-            <li><a href="../index.php?logout='1'&active='1'">Log out</a></li>
+            <li><a href="../Admin/AdminRooms.php"><i class="fas fa-bed"></i>Rooms</a></li>
+            <li><a href="../Admin/AdminOrders.php"><i class="fas fa-shopping-basket"></i>Orders</a></li>
+            <li><a href="../Admin/AdminManageAccounts.php"><i class="fas fa-users"></i>Manage accounts</a></li>
+            <li><a href="../Admin/mailing/index.php"><i class="fas fa-angle-right"></i><i class="fas fa-users"></i>Send emails</a></li>
+            <li><a href="../index.php?logout='1'&active='1'"><i class="fas fa-sign-out-alt"></i>Log out</a></li>
         </ul>
         <div class="menu">
             <div class="line1"></div>
@@ -88,7 +89,7 @@
                                 <td>".$result['email']."</td>
                                 <td>".$result['role']."</td>
                                 <td><a href= 'edit_accounts.php?us=$result[username]&em=$result[email]&rl=$result[role]'><button class='button' style='background-color:green; padding: 5px 20px;cursor: pointer'>UPDATE</button></a></td>
-                                <td><a href='delete_account.php?id=$result[id]'><button class='button' style='background-color:red;padding: 5px 20px;cursor: pointer' onclick='return delete_warning()'>DELETE</button></a></td>
+                                <td><a href='delete_account.php?us=$result[username]'><button class='button' style='background-color:red;padding: 5px 20px;cursor: pointer' onclick='return delete_warning()'>DELETE</button></a></td>
                                
                             </tr>
                             ";
@@ -111,10 +112,6 @@
                 </tr>
                 <tr style="background-color: transparent; width: 100%; height: 30px;"></tr>
                 <tr>
-                    <td>Id</td>
-                    <td><input type="text" id="id" placeholder="Id" name="id" required></td>
-                </tr>
-                <tr>
                     <td>Username</td>
                     <td><input type="text" id="username" placeholder="Username" name="username" required></td>
                 </tr>
@@ -125,10 +122,6 @@
                 <tr >
                     <td>Password</td>
                     <td><input type="text" id="pass" placeholder="Password" name="passw" required></td>
-                </tr>
-                <tr>
-                    <td>Confirm Password</td>
-                    <td><input type="text" id="confpass" placeholder="Password" name="con_passw" required></td>
                 </tr>
                 <tr>
                     <td>Role</td>
@@ -142,18 +135,10 @@
                 <?php 
                     if(isset($_POST['submit']))
                     {
-                        $id=$_POST['id'];
                         $us=$_POST['username'];
                         $em=$_POST['email'];
                         $ps=$_POST['passw'];
-                        $cp=$_POST['con_passw'];
                         $rl=$_POST['role'];
-                        if($ps != $cp)
-                        {
-                        	echo '<script type="text/javascript">';
-							echo ' alert("Passwords do not match.")';  
-							echo '</script>';
-                        }
                         $query= mysqli_query($con, "SELECT * FROM login WHERE username='$us'");
                         if(mysqli_num_rows($query)>0)
                         {
@@ -163,9 +148,9 @@
                         }
                         else
                         {
-                            if($us != "" && $em != "" && $ps != "" && $cp != "" && $rl != "" &&  $ps == $cp)
+                            if($us != "" && $em != "" && $ps != "" && $rl != "")
                             {
-                                $query="INSERT INTO login (`id_user`, `username`, `email`, `password`, `con_pass`, `role`)VALUES ('$id','$us','$em','$ps','$cp','$rl')";
+                                $query="INSERT INTO login (`id_user`, `username`, `email`, `password`, `role`)VALUES ('','$us','$em','$ps','$rl')";
                                 $data=mysqli_query($con, $query);
                                 echo '<meta http-equiv="refresh" content="0; URL=../Admin/AdminManageAccounts.php">';
                             }
@@ -180,7 +165,13 @@
         <i class="fas fa-arrow-up"></i>
     </div>
 
-    <script src="menu.js"></script>
+    <script type="text/javascript">
+    if (window.history.replaceState) {
+      window.history.replaceState(null, null, window.location.href);
+    }
+  </script>
+  <script src="menu.js"></script>
+</body>
 </body>
 
 </html>

@@ -4,6 +4,7 @@
     error_reporting(0);
     $rn=$_GET['rn'];
     $ty=$_GET['ty'];
+    $fc=$_GET['fc'];
     $pr=$_GET['pr'];
     $st=$_GET['st'];
 ?>
@@ -38,6 +39,10 @@
                 <td>Status</td>
                 <td><input type="text" id="status" value="<?php echo "$st" ?>" name="status1" required></td>
             </tr>
+            <tr>
+                    <td>Facilities</td>
+                    <td><input type="text" id="facilities" value="<?php echo "$fc" ?>" name="facilities1" required></td>
+            </tr>
             <tr style="background-color: transparent; height: 60px;">
                 <td colspan="2"><button type="submit" name="submit">UPDATE</button></td>
             </tr>
@@ -49,11 +54,12 @@
                 {
                     $rn1=$_GET['roomNumber1'];
                     $ty1=$_GET['type1'];
+                    $fc1=$_GET['facilities1'];
                     $pr1=$_GET['price1'];
                     $st1=$_GET['status1'];
                     if($rn1 != "" && $ty1 != "" && $pr1 != "" && $st1 != "")
                     {                
-                        $query="UPDATE rooms SET roomNumber='$rn1', type='$ty1', price='$pr1', status='$st1' WHERE roomNumber='$rn1'";
+                        $query="UPDATE rooms SET roomNumber='$rn1', type='$ty1',facilities='$fc1', price='$pr1', status='$st1' WHERE roomNumber='$rn1'";
                         $data=mysqli_query($con, $query);
                         echo '<meta http-equiv="refresh" content="0; URL=../Admin/AdminRooms.php">';
                     }

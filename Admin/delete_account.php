@@ -3,8 +3,8 @@
 	include("connection.php");
 	error_reporting(0);
 
-	$id=$_GET['id'];
-	$query= "DELETE FROM login WHERE id_user='$id'";
+	$us=$_GET['us'];
+	$query= "DELETE FROM login WHERE username='$us'";
 
 	$data=mysqli_query($con,$query);
 
