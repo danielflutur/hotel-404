@@ -1,0 +1,22 @@
+.row .button{
+    background: none;
+    transform:  translateX(50%); 
+    color:black; 
+    font-size: 30px; 
+    font-weight: 500; 
+    border: 3px solid black;
+    transition: 0.5s ease-in;
+}
+
+.button:hover{
+    box-shadow: inset 0 0 0 2em rgba(0, 0, 0, 1);
+    color: white;
+}
+
+.submit{
+    background-image: url(img/final.jpg); 
+    background-position: right bottom;  
+    background-size: cover; 
+    background-repeat: repeat; 
+    background-attachment: fixed;
+}

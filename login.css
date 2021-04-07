@@ -1,0 +1,121 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
+
+body{
+    background-image: /* linear-gradient(90deg, #feb2ed33, #0ed2f71c),*/ url(img/fundal.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#loginForm{
+    
+    margin: 40px 0;
+    box-shadow: 0px 13px 30px 0px rgba(0, 0, 0, 0.5);
+}
+
+#loginForm .col-md-4{
+    padding: 40px 20px;
+}
+
+.row{
+	background: white;
+}
+
+#loginForm .col-md-7{
+    background-image: linear-gradient(90deg, #d3cce33b, #e9e4f000) ,url(img/register-hotel.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.form-control { display: inline-block !important; }
+
+#loginForm .form-control{
+    background: none;
+    border: none;
+    outline: none;
+    border-radius: 0%;
+    border-bottom: 1px solid black;
+}
+
+#loginForm .btn-primary{
+    background: linear-gradient(90deg, #DAE2F8, #D6A4A4);
+    width: 170px;
+    border-radius: 50px;
+    height: 50px;
+    border: none;
+}
+
+#loginForm .btn-primary:hover{
+    color: black;
+}
+
+#loginForm ::placeholder , label, .btn-primary{
+    font-size: 16px;
+    font-family: "Raleway";
+}
+
+#loginForm h3{
+    font-family: "Raleway";
+}
+
+#loginForm label{
+    font-weight: bolder;
+}
+
+.container{
+    transform: translateY(10%);
+}
+
+.motto{
+    background: none;
+    font-weight: bold;
+    color: white;
+}
+
+.box::before{
+    content: '';
+    width: 96%;
+    left: 15px;
+    height: 100.05%;
+    top: 0px;
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(90deg, #8360c3,#2ebf91);
+    filter: blur(50px);
+    animation: glow 1s ease infinite;
+}
+
+@keyframes glow {
+    0% { background-position: 0% 50%;}
+    50% { background-position: 100% 50%;}
+    100% { background-position: 0% 50%;}
+}
+
+.pulse{
+    color: red;
+    animation: pulse 4s ease infinite;
+}
+
+@keyframes pulse{
+    0% {
+        color: white;
+		transform: scale(0.95);
+		text-shadow: 0px 0px 30px rgb(255, 0, 0, 1);
+	}
+
+	70% {
+        color: red;
+		transform: scale(1);
+		text-shadow: 0px 0px 30px rgba(255, 0, 0, 0);
+	}
+
+	100% {
+        color: white;
+		transform: scale(0.95);
+		text-shadow: 0px 0px 30px rgb(255, 0, 0, 1);
+	}
+}

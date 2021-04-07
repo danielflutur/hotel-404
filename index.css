@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miss+Fajardose&display=swap');
+
+
+
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+}
+.carousel-caption {
+	bottom: 220px;
+}
+.carousel-caption h5 {
+	font-size: 45px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+	font-family: "Miss Farajadose";
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.2;
+	font-family: "Crimson Pro";
+	font-size: 25px;
+}
+.carousel-caption a {
+	text-transform: uppercase;
+	text-decoration: none;
+	background: none;
+	padding: 5px 20px;
+	border: 2px solid rgb(214, 190, 84);
+	border-radius: 3px;
+	display: inline-block;
+	color: white;
+	margin-top: 15px;
+	transition: 0.3s ease-in;
+}
+
+.carousel-caption a:hover {
+	background: rgb(214, 190, 84);
+}
+
+.first-slide{
+	background-image: linear-gradient(90deg, #3e515114, #decba4b0), url(img/c-1.jpg);
+	background-size: cover;
+}
+
+.second-slide{
+	background-image: linear-gradient(90deg, #5d415742, #a8caba42), url(img/c-2.jpg);
+	background-size: cover;
+}
+
+.third-slide{
+	background-image: linear-gradient(150deg, #0f20275c, #203a4369, #2c5364a1), url(img/c-3.jpg);
+	background-size: cover;
+}
+
+#reflection, #reflection-final {
+  box-shadow: 0px 50px 70px rgba(0,0,0,0.3),
+              0px 10px 10px rgba(0,0,0,0.1);
+              transition: 0.5s ease-in ;
+  }
+
+#reflection:hover{
+  transform: translateY(-20px);
+}
+
+.wrapper-camere{
+  background-image: url(img/41665.jpg);
+  background-position: right bottom;  
+  background-size: cover; 
+  background-repeat: repeat;
+  background-attachment: fixed;
+  font-family: "Crimson Pro", 'Courier New', Courier, monospace;
+  font-size: 20px;
+}
+.wrapper-camere h5{
+	font-size: 25px;
+}
+
+.glow::before{
+	content: "";
+	position: absolute;
+	left: -10%;
+	background: linear-gradient(-45deg, #C6FFDD, #FBD786, #f7797d, #8360c3, #2ebf91);
+	background-size: 400%;
+	height: calc(100%);
+	width: calc(120%);
+	z-index: -1;
+	transform: rotate(180deg);
+	top: 10%;
+
+	animation: glow 70s linear infinite;
+}
+
+@keyframes glow{
+	0%{ background-position: 0 0;}
+	50% { background-position: 400% 0;}
+	100% { background-position: 0 0;}
+}
+
+.glow::before{
+	filter: blur(300px);
+	opacity: 0.7;
+}
+
+.text-wrapper{
+	font-family: "Merriweather", Arial, Helvetica, sans-serif;
+}
+
+.wrapper1{
+	font-family: "Crimson Pro", 'Courier New', Courier, monospace;
+	font-size: 20px;
+	line-height: 25px;
+}
+
+.wrapper1 h3{
+	font-size: 30px;
+}
+
+#first-letter{
+	font-family: "Miss Fajardose", 'Courier New', Courier, monospace;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.card-text{
+	line-height: 25px;
+}
+
+.h-rule{
+	position: relative;
+	left: 20%;
+    height: 25px;
+    border-style: solid;
+    border-color: black;
+    width: 60%;
+    border-radius: 20px;
+}
+.h-rule::before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
