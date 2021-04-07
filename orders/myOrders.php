@@ -43,7 +43,7 @@
     <div class="left">
       <ul>
         <li><a href="../index.php">
-          <i class="far fa-building"></i> Hotel name</a></li>
+          <i class="far fa-building"></i> Waypoint hotel</a></li>
     </div>
     <div class="right">
       <ul>
@@ -51,12 +51,12 @@
           <?php
             if (isset($_SESSION['username']))
             {
-              echo "<p style='margin-right: 15px; font-size: 20px; cursor:pointer;'>";
-              echo $_SESSION['username']; 
+              echo "<p style='margin-right: 15px; font-size: 20px; cursor:pointer; color:white;'>";
+              echo $_SESSION['username'];
                 echo " <i class='fas fa-user-alt' style='font-size: 30px;''></i><i class='fas fa-chevron-down'></i></i></p>
                 <div class='dropdown'>
                 <ul>
-                  <li><a href='#' ><i class='fas fa-user-alt'></i> Profile</a></li>
+                  
                   <li><a href='myOrders.php'><i class='fas fa-shopping-basket'></i> Orders</a></li>
                   <li><a href='../Rooms/rooms.php'>
                     <i class='fas fa-bed'></i> Rooms</a></li>
@@ -108,10 +108,11 @@
               </div>";
           }
           echo "<div class='col-md-6 border-left'>
+                <h3 class='mt-3 text-left'>Room type:".$result['room_type']."</h3>
                 <h3 class='mt-3 text-left'>Check-in date:".$result['ci_date']."</h3>
                 <h3 class='text-left'>Check-out date:".$result['co_date']."</h3>
-                <h3 class='text-left'>Price:".$result['price']."</h3>
-                <a class='btn w-25 mb-5' href='delete.php?id=$result[id_bill]'>Cancel</a>
+                <h3 class='text-left'>Price:".$result['price']."€/night</h3>
+                <a class='btn w-25 mb-5' href='delete.php?id=$result[id_bill]&rn=$result[roomNumber]' >Cancel</a>
               </div>
             </div>
           </div>

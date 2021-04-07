@@ -4,11 +4,12 @@
 	error_reporting(0);
 
 	$id=$_GET['id'];
+	$rn=$_GET['rn'];
 	$query= "DELETE FROM bill WHERE id_bill='$id'";
-
+	$query2="UPDATE rooms SET status='available' WHERE roomNumber='$rn'";
 	$data=mysqli_query($con,$query);
-
-	if($data)
+	$data2=mysqli_query($con,$query2);
+	if($data && $data2)
 	{
 		echo '<meta http-equiv="refresh" content="0; URL=../orders/myOrders.php">';
 	}
