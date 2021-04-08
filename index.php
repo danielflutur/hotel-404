@@ -262,7 +262,7 @@
 				<div class="col-md-12 text-center d-md-flex align-items-center"> <i
 						class="d-block fa fa-stop-circle fa-2x mr-md-5 text-dark"></i>
 					<ul class="nav mx-md-auto d-flex justify-content-center">
-						<li class="nav-item"> <a class="nav-link active text-dark" href="#">Adress: 0832183128</a> </li>
+						<li class="nav-item"> <a class="nav-link active text-dark" href="#">Phone: 0832183128</a> </li>
 						<li class="nav-item"> <a class="nav-link text-dark" href="#">Adress: Str. Traian Vuia</a> </li>
 					</ul>
 				</div>
