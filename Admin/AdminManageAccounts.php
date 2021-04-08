@@ -40,8 +40,8 @@
         <ul class="links">
             <li><a href="../Admin/AdminRooms.php"><i class="fas fa-bed"></i>Rooms</a></li>
             <li><a href="../Admin/AdminOrders.php"><i class="fas fa-shopping-basket"></i>Orders</a></li>
-            <li><a href="../Admin/AdminManageAccounts.php"><i class="fas fa-users"></i>Manage accounts</a></li>
-            <li><a href="../Admin/mailing/index.php"><i class="fas fa-angle-right"></i><i class="fas fa-users"></i>Send emails</a></li>
+            <li><a href="../Admin/AdminManageAccounts.php"><i class="fas fa-angle-right"></i><i class="fas fa-users"></i>Manage accounts</a></li>
+            <li><a href="../Admin/mailing/index.php"><i class="fas fa-users"></i>Send emails</a></li>
             <li><a href="../index.php?logout='1'&active='1'"><i class="fas fa-sign-out-alt"></i>Log out</a></li>
         </ul>
         <div class="menu">
