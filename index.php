@@ -232,7 +232,7 @@
 		</div>
 	</div>
 
-	<div class="py-5 wrapper-final">
+	<!--<div class="py-5 wrapper-final">
 		<div class="container">
 			<div class="row">
 				<div class="text-center mx-auto col-md-12">
@@ -252,7 +252,7 @@
 
 			</div>
 		</div>
-	</div>
+	</div>-->
 
 
 
