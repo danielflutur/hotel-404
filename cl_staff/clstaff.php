@@ -75,7 +75,7 @@
                             if($result['status1']=='empty')
                             {
                             
-                            echo "<td><a href='actualizare_status.php?roomNumber=$result[roomNumber]'><button class='button' style='background-color:green ;padding: 5px 20px;  width:20%; cursor: pointer'>Clea</button></a></td>                                 
+                            echo "<td><a href='actualizare_status.php?roomNumber=$result[roomNumber]'><button class='button' style='background-color:green ;padding: 5px 20px;  width:20%; cursor: pointer'>Clean</button></a></td>                                 
                             </tr>
                             ";
                             }
