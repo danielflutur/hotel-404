@@ -59,15 +59,6 @@
 	background-size: cover;
 }
 
-#reflection, #reflection-final {
-  box-shadow: 0px 50px 70px rgba(0,0,0,0.3),
-              0px 10px 10px rgba(0,0,0,0.1);
-              transition: 0.5s ease-in ;
-  }
-
-#reflection:hover{
-  transform: translateY(-20px);
-}
 
 .wrapper-camere{
   background-image: url(img/41665.jpg);
