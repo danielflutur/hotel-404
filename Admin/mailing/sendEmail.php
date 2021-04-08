@@ -1,6 +1,16 @@
 <?php
+$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));     
+    $host = $cleardb_url["host"];  
+    $user = $cleardb_url["user"];  
+    $password = $cleardb_url["pass"];  
+    $db_name = substr($cleardb_url["path"],1);  
+    
+    $active_group = 'default';
+  $query_builder = TRUE;
+      
+    $conn = mysqli_connect($host, $user, $password, $db_name);
 
-$conn=mysqli_connect("localhost", "root", "", "hotel_db");
+//$conn=mysqli_connect("localhost", "root", "", "hotel_db");
 
 use PHPMailer\PHPMailer\PHPMailer;
 
