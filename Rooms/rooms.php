@@ -70,7 +70,12 @@
 		</div>
 	</nav>
 	
-
+	<div class="py-5" style="transform: translateY(10%);">
+	    <div class="container">
+		      <br>
+		      <h1 class="">Rooms<hr style="width: 25%;"></h1>
+	    </div>
+	 </div>
 
     <div class="py-3" >
         <div class="container pt-5">
@@ -114,7 +119,7 @@
 					</ul>
 					<div class="row">
 						<div
-							class="col-md-12 d-flex align-items-center justify-content-md-between justify-content-center my-2">
+							class="col-md-12 d-flex align-items-center justify-content-md-between justify-content-center my-2" style="color: black;">
 							<a href="#">
 								<i class="d-block fa fa-facebook-official text-muted fa-lg mx-2"></i>
 							</a> <a href="#">
