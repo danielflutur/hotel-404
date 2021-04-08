@@ -119,12 +119,12 @@
 					</ul>
 					<div class="row">
 						<div
-							class="col-md-12 d-flex align-items-center justify-content-md-between justify-content-center my-2" style="color: black;">
-							<a href="#">
+							class="col-md-12 d-flex align-items-center justify-content-md-between justify-content-center my-2">
+							<a href="#"  style="color: black;">
 								<i class="d-block fa fa-facebook-official text-muted fa-lg mx-2"></i>
-							</a> <a href="#">
+							</a> <a href="#"  style="color: black;">
 								<i class="d-block fa fa-instagram text-muted fa-lg mx-2"></i>
-							</a> <a href="#">
+							</a> <a href="#"  style="color: black;">
 								<i class="d-block fa fa-twitter text-muted fa-lg ml-2"></i>
 							</a> </div>
 					</div>
