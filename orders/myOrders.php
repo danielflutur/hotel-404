@@ -113,7 +113,8 @@
                 <h3 class='mt-3 text-left'>Check-in date:".$result['ci_date']."</h3>
                 <h3 class='text-left'>Check-out date:".$result['co_date']."</h3>
                 <h3 class='text-left'>Price:".$result['price']."€/night</h3>";
-          if($result['ci_date'] > $cd)
+                $cf=$result['ci_date'];
+          if($ci > $cd)
           {
                 echo "<a class='btn w-25 mb-5' href='delete.php?id=$result[id_bill]&rn=$result[roomNumber]' >Cancel</a>";
           }
