@@ -14,13 +14,7 @@
         header("location: ../index.php");
     }
     include("../connection.php");
-    $us=$_GET['us'];
-    $query = "SELECT * FROM login where username='$us'";
-    $data = mysqli_query($con,$query);
-    if($result=mysqli_fetch_assoc($data))
-    {
-        $pw=$result['password'];
-    }
+    $us=$_SESSION['username'];
 
 ?>
 
