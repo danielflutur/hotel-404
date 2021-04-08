@@ -153,6 +153,6 @@
 }
 @media only screen and (max-width: 768px){
 	.carousel-caption h5{
-		margin-top: 3%;
+		margin-top: 25px;
 	}
 }
