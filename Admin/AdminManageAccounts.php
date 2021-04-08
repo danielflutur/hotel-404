@@ -7,14 +7,6 @@
         //$_SESSION['msg'] = "You have to log in first";
         header('location: ../login.php');
     }
-    if (!isset($_SESSION['username']))
-    {
-        $ac=true;
-    }
-    else
-    {
-        $ac=false;
-    }
     if (isset($_GET['logout']))
     {
         session_destroy();
