@@ -12,7 +12,7 @@
 	bottom: 220px;
 }
 .carousel-caption h5 {
-	font-size: 350%;
+	font-size: 250%;
 	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -24,7 +24,7 @@
 	margin: auto;
 	line-height: 1.2;
 	font-family: "Crimson Pro";
-	font-size: 200%;
+	font-size: 150%;
 }
 .carousel-caption a {
 	text-transform: uppercase;
