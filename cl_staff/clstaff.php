@@ -78,7 +78,7 @@
                             </tr>
                             ";
                             }
-                            else
+                            else if($result['status1']=='cleaning')
                             {
                                 echo "<tr>
                                     <td>".$result['roomNumber']."</td>
