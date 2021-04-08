@@ -85,6 +85,7 @@
     if (isset($_SESSION['username']))
     {
       $us=$_SESSION['username'];
+      $cd=date("Y-m-d H:i:s");
       $query="SELECT * FROM bill WHERE username='$us'";
       $data = mysqli_query($con,$query);
       while($result=mysqli_fetch_assoc($data))
@@ -111,9 +112,16 @@
                 <h3 class='mt-3 text-left'>Room type:".$result['room_type']."</h3>
                 <h3 class='mt-3 text-left'>Check-in date:".$result['ci_date']."</h3>
                 <h3 class='text-left'>Check-out date:".$result['co_date']."</h3>
-                <h3 class='text-left'>Price:".$result['price']."€/night</h3>
-                <a class='btn w-25 mb-5' href='delete.php?id=$result[id_bill]&rn=$result[roomNumber]' >Cancel</a>
-              </div>
+                <h3 class='text-left'>Price:".$result['price']."€/night</h3>";
+          if($result['ci_date'] > $cd)
+          {
+                echo "<a class='btn w-25 mb-5' href='delete.php?id=$result[id_bill]&rn=$result[roomNumber]' >Cancel</a>";
+          }
+          else
+          {
+              echo "<a class='btn w-25 mb-5' href='<script>alert(Record outdated)</script>'>Cancel</a>";
+          }
+             echo" </div>
             </div>
           </div>
         </div>";
