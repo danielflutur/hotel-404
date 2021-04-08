@@ -45,7 +45,7 @@
     <div class="container">
         <div class="row motto" >
           <div class="col-md-12">
-            <h1 class="display-4 text-center my-3">"Your home is where your <span class="pulse">hearth</span> is"</h1>
+            <h1 class="display-4 text-center my-3">"Your home is where your <span class="pulse">heart</span> is"</h1>
           </div>
         </div>
       </div>
