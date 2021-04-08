@@ -113,6 +113,33 @@
                 <h3 class='mt-3 text-left'>Check-in date:".$result['ci_date']."</h3>
                 <h3 class='text-left'>Check-out date:".$result['co_date']."</h3>
                 <h3 class='text-left'>Price:".$result['price']."€/night</h3>";
+          if($result['status']=='available')
+          {
+            echo "<div class='col-md-6 border-left'>
+                <h3 class='mt-3 text-left'>Room type:".$result['room_type']."</h3>
+                <h3 class='mt-3 text-left'>Check-in date:".$result['ci_date']."</h3>
+                <h3 class='text-left'>Check-out date:".$result['co_date']."</h3>
+                <h3 class='text-left'>Price:".$result['price']."€/night</h3>
+                <a class='btn w-25 mb-5' href='checkin.php?id=$result[id_bill]' >checkin</a>
+                <a class='btn w-25 mb-5' href='delete.php?id=$result[id_bill]&rn=$result[roomNumber]' >Cancel</a>
+              </div>
+            </div>
+            </div>
+            </div>";
+          }
+      else if($result['status']=='check-in'){
+        echo "<div class='col-md-6 border-left'>
+                <h3 class='mt-3 text-left'>Room type:".$result['room_type']."</h3>
+                <h3 class='mt-3 text-left'>Check-in date:".$result['ci_date']."</h3>
+                <h3 class='text-left'>Check-out date:".$result['co_date']."</h3>
+                <h3 class='text-left'>Price:".$result['price']."€/night</h3>
+                <a class='btn w-25 mb-5' href='checkout.php?id=$result[id_bill]' >checkin</a>
+                <a class='btn w-25 mb-5' href='delete.php?id=$result[id_bill]&rn=$result[roomNumber]' >Cancel</a>
+              </div>
+            </div>
+          </div>
+        </div>";
+      }
                 $cf=$result['ci_date'];
           if($cf > $cd)
           {
