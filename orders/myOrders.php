@@ -94,17 +94,17 @@
             <div class='row'>";
           if($result['room_type']=='single')
           {
-            echo "<div class='col-md-6 mb-5'> <img class='img-fluid d-block shadow-lg' src='img/single.jpg'>
+            echo "<div class='col-md-6 mb-5'> <img class='img-fluid d-block shadow-lg' src='../img/single.jpg'>
               </div>";
           }
           else if($result['room_type']=='double')
           {
-            echo "<div class='col-md-6 mb-5'> <img class='img-fluid d-block shadow-lg' src='img/double.jpg'>
+            echo "<div class='col-md-6 mb-5'> <img class='img-fluid d-block shadow-lg' src='../img/double.jpg'>
               </div>";
           }
           else
           {
-            echo "<div class='col-md-6 mb-5'> <img class='img-fluid d-block shadow-lg' src='img/triple.jpg'>
+            echo "<div class='col-md-6 mb-5'> <img class='img-fluid d-block shadow-lg' src='../img/triple.jpg'>
               </div>";
           }
           echo "<div class='col-md-6 border-left'>

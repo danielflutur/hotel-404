@@ -14,7 +14,7 @@
 }
 
 .submit{
-    background-image: url(img/final.jpg); 
+    background-image: url(../../img/final.jpg); 
     background-position: right bottom;  
     background-size: cover; 
     background-repeat: repeat; 

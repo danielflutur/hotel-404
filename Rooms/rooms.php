@@ -75,7 +75,7 @@
     <div class="py-3" >
         <div class="container pt-5">
           <div class="row my-4 d-flex justify-content-center">
-            <div class="col-md-6"><img class="img-fluid d-block shadow" src="img/single.jpg"></div>
+            <div class="col-md-6"><img class="img-fluid d-block shadow" src="../img/single.jpg"></div>
             <div class="col-md-6 ml-auto border-left-0 border-right border-dark">
               <h1 class="">Single</h1>
               <p class="lead camere">Some details about the room like price and features</p>
@@ -83,7 +83,7 @@
             </div>
           </div>
           <div class="row my-4 d-flex justify-content-center">
-            <div class="col-md-6"><img class="img-fluid d-block shadow" src="img/double.jpg"></div>
+            <div class="col-md-6"><img class="img-fluid d-block shadow" src="../img/double.jpg"></div>
             <div class="col-md-6 ml-auto border-left border-dark">
               <h1 class="">Double</h1>
               <p class="lead">Some details about the room like price and features</p>
@@ -91,7 +91,7 @@
             </div>
           </div>
           <div class="row my-4 d-flex justify-content-center">
-            <div class="col-md-6"><img class="img-fluid d-block shadow-lg" src="img/triple.jpg"></div>
+            <div class="col-md-6"><img class="img-fluid d-block shadow-lg" src="../img/triple.jpg"></div>
             <div class="col-md-6 ml-auto border-left-0 border-right border-dark">
               <h1 class="">Triple</h1>
               <p class="lead camere">Some details about the room like price and features</p>

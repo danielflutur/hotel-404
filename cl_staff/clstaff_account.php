@@ -36,8 +36,8 @@
         </div>
         <ul class="links">
             <li><a href="clstaff.php"><i class="fas fa-bed"></i>Rooms</a></li>
-            <li><a href="clstaff_account.php"><i class="far fa-user-circle"></i>Manage account</a></li>
-            <li><a href="../index.php?logout='1'&active='1'"><i class="fas fa-angle-right"></i><i class="fas fa-sign-out-alt"></i>Log out</a></li>
+            <li><a href="clstaff_account.php"><i class="fas fa-angle-right"></i><i class="far fa-user-circle"></i>Manage account</a></li>
+            <li><a href="../index.php?logout='1'&active='1'"><i class="fas fa-sign-out-alt"></i>Log out</a></li>
         </ul>
         <div class="menu">
             <div class="line1"></div>
@@ -58,7 +58,7 @@
             </tr>
             <tr style="background-color: transparent;">
                 <td>Old password</td>
-                <td><input type="text" id="old_pass" name="old_passw" required></td>
+                <td><input type="text" id="old_pass" name="old_passw" placeholder="Old password" required></td>
             </tr>
             <tr style="background-color: transparent;">
                 <td>New password</td>

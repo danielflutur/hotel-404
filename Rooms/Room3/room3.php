@@ -88,7 +88,7 @@
         </div>
         <div class="row">
           <div class="p-0 col-12">
-            <img class="img-fluid d-block cover" src="img/triple.jpg" width="100%">
+            <img class="img-fluid d-block cover" src="../../img/triple.jpg" width="100%">
           </div>
         </div>
       </div>
@@ -97,10 +97,10 @@
     <div class="py-5 text-center gallery">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 col-8 order-2 order-lg-1"> <img class="img-fluid d-block rounded" src="img/bucatarie.jpg"> </div>
+          <div class="col-lg-4 col-8 order-2 order-lg-1"> <img class="img-fluid d-block rounded" src="../../img/bucatarie3.jpg"> </div>
           <div class="col-lg-2 col-4 d-flex flex-column justify-content-between order-3 order-lg-2">
-            <img class="img-fluid d-block rounded" src="img/toilet.jpg">
-            <img class="img-fluid d-block rounded" src="img/bath.jpg">
+            <img class="img-fluid d-block rounded" src="../../img/toilet3.jpg">
+            <img class="img-fluid d-block rounded" src="../../img/bath3.jpg">
           </div>
           <div class="px-md-5 p-3 d-flex flex-column justify-content-center col-lg-6 order-1 order-lg-3">
             <i class="d-block fa fa-circle fa-3x mb-2 text-muted"></i>
