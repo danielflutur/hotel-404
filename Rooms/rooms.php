@@ -81,7 +81,7 @@
 			<div class="col-md-8 col-md-offset-2" style="margin-top: 5%;">
 					<div class="row">
 						<?php
-						include("../connection.php")
+						include("../connection.php");
 						if(isset($_POST['search'])){
 							$searchKey= $_POST['search'];
 							$sql= "SELECT *FROM rooms WHERE type LIKE '%$searchKey%'  and status='available' ";
