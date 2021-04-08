@@ -68,13 +68,25 @@
                     {
                         while($result=mysqli_fetch_assoc($data) )
                         {
+                            if($result['status']=='available')
+                            {
                             echo "
                             <tr>
                                 <td>".$result['roomNumber']."</td>
                                 <td>".$result['status']."</td>
-                                <td><a href='room_status.php?roomNumber=$result[roomNumber]'><button class='button' style='background-color:green ;padding: 5px 20px;  width:20%; cursor: pointer'>Cleaned</button></a></td>
+                                <td><a href='room_status.php?roomNumber=$result[roomNumber]'><button class='button' style='background-color:green ;padding: 5px 20px;  width:20%; cursor: pointer'>Cleaned</button></a></td>                                 
                             </tr>
                             ";
+                            }
+                            else
+                            {
+                                echo "<tr>
+                                    <td>".$result['roomNumber']."</td>
+                                    <td>".$result['status']."</td>
+                                
+                                       <td><a href='actualizare2.php?roomNumber=$result[roomNumber]'><button class='button' style='background-color:red ;padding: 5px 20px;  width:20%; cursor: pointer'>EXIT</button></a></td>  </tr>";
+                            }
+
                         }
                     }
                     else
