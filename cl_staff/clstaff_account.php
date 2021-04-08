@@ -37,7 +37,7 @@
         <ul class="links">
             <li><a href="clstaff.php"><i class="fas fa-bed"></i>Rooms</a></li>
             <li><a href="clstaff_account.php"><i class="far fa-user-circle"></i>Manage account</a></li>
-            <li><a href="../index.php?logout='1'&active='1'"><i class="fas fa-sign-out-alt"></i>Log out</a></li>
+            <li><a href="../index.php?logout='1'&active='1'"><i class="fas fa-angle-right"></i><i class="fas fa-sign-out-alt"></i>Log out</a></li>
         </ul>
         <div class="menu">
             <div class="line1"></div>
@@ -73,22 +73,23 @@
                 {
                     $ops=$_GET['old_passw'];
                     $ps=$_GET['passw'];
+                    $us=$_SESSION['username'];
                     if($ops != "" && $ps != "")
                     {   
-                        $query1 = "SELECT * FROM login where username='$_SESSION['username']'";
+                        $query1 = "SELECT * FROM login where username='$us'";
                         $data1 = mysqli_query($con,$query);
                         if($result=mysqli_fetch_assoc($data1))
                         {
                             $pw=$result['password'];
                             if($ops==$pw)
                             {
-                                $query="UPDATE login SET password='$ps' WHERE username='$_SESSION['username']'";
+                                $query="UPDATE login SET password='$ps' WHERE username='$us'";
                                 $data=mysqli_query($con, $query);
                                 echo '<meta http-equiv="refresh" content="0; URL=../cl_staff/clstaff_account.php">';
                             }
                             else
                             {
-                                echo "<script>alert(Wrong old password!)</script>"
+                                echo "<script>alert(Wrong old password!)</script>";
                                 echo '<meta http-equiv="refresh" content="0; URL=../cl_staff/clstaff_account.php">';
                             }
                         }
