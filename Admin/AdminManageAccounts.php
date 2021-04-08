@@ -117,7 +117,12 @@
                 </tr>
                 <tr>
                     <td>Role</td>
-                    <td><input type="text" id="user_role" placeholder="Role" name="role" required></td>
+                    <td><select style="width: 80%; height: 25px;" name="role" id="class">
+                        <option value="Class" disabled>Select class</option>
+                        <option value="admin" id="admin">Admin</option>
+                        <option value="guest" id="guest">Guest</option>
+                        <option value="cleaner" id="Cleaning staff">Cleaner</option>
+                    </select></td>
                 </tr>
                 <tr style="background-color: transparent; height: 80px;">
                     <td colspan="2"><button type="submit" id="sublim-btn" name="submit">ADD</button></td>

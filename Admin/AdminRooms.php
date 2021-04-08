@@ -116,10 +116,10 @@
                 <tr>
                     <td>Type</td>
                     <td><select style="width: 80%; height: 25px;" name="type" id="class">
-                        <option value="Class" disabled>Select class</option>
-                        <option value="admin" id="admin">Admin</option>
-                        <option value="guest" id="guest">Guest</option>
-                        <option value="cleaner" id="Cleaning staff">Cleaner</option>
+                        <option value="Class" disabled>Select type</option>
+                        <option value="single" id="single">Single</option>
+                        <option value="double" id="double">Double</option>
+                        <option value="triple" id="triple">Triple</option>
                     </select></td>
                 </tr>
                 <tr style="background-color: transparent;">
