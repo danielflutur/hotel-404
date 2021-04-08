@@ -115,12 +115,12 @@
                 </tr>
                 <tr>
                     <td>Type</td>
-                    <select name="type" id="class">
+                    <td><select name="type" id="class">
                         <option value="Class" disabled>Select class</option>
                         <option value="admin" id="admin">Admin</option>
                         <option value="guest" id="guest">Guest</option>
                         <option value="cleaner" id="Cleaning staff">Cleaner</option>
-                    </select>
+                    </select></td>
                 </tr>
                 <tr style="background-color: transparent;">
                     <td>Price in €/night</td>
