@@ -6,7 +6,7 @@
 	$id=$_GET['id'];
 	$rn=$_GET['rn'];
 	$query= "UPDATE bill SET status='canceled' WHERE id_bill='$id'";
-	$query2="UPDATE rooms SET status='available' WHERE roomNumber='$rn'";
+	$query2="UPDATE rooms SET status='canceled' WHERE roomNumber='$rn'";
 	$data=mysqli_query($con,$query);
 	$data2=mysqli_query($con,$query2);
 	if($data && $data2)
