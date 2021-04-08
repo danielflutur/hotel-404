@@ -144,11 +144,11 @@
                       <label class='m-0'>Available Room</label><br>";
                   if($result=mysqli_fetch_assoc($data))
                   {
-                      echo "<input type='text' value='". $result['roomNumber']."'class=form-control' id='form6' name='room_nr' disabled>
+                      echo "<input type='text' value='". $result['roomNumber']."'class=form-control' id='form6' name='room_nr' readonly>
                     </div>
                     <div class='form-group' style='transform: translateY(+25px);'>
                       <label class='m-0'>Price</label><br>
-                      <input type='text' value='". $result['price']."'class=form-control' id='form6' name='price' disabled>
+                      <input type='text' value='". $result['price']."'class=form-control' id='form6' name='price' readonly>
                     </div>";
                   
                   }
