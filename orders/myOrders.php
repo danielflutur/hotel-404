@@ -119,7 +119,7 @@
           }
           else
           {
-              echo "<a class='btn w-25 mb-5' href='<script>alert(Record outdated)</script>'>Cancel</a>";
+              echo "<a class='btn w-25 mb-5' onclick(<script>alert(Record outdated)</script>)'>Cancel</a>";
           }
              echo" </div>
             </div>
