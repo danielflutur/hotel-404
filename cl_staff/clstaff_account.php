@@ -13,8 +13,6 @@
         unset($_SESSION['username']);
         header("location: ../index.php");
     }
-    include("../connection.php");
-    $us=$_SESSION['username'];
 
 ?>
 
@@ -57,7 +55,7 @@
             <tr style="background-color: transparent; width: 100%; height: 30px;"></tr>
             <tr style="background-color: transparent;">
                 <td>Logged in as</td>
-                <td><input style="background-color: transparent; border: none; border-bottom: 2px solid;" type="text" id="email" value="<?php echo "$us"; ?>" disabled></td>
+                <td><input style="background-color: transparent; border: none; border-bottom: 2px solid;" type="text" id="email" value="<?php echo $_SESSION['username']; ?>" disabled></td>
             </tr>
             <tr style="background-color: transparent;">
                 <td>Old password</td>
@@ -78,14 +76,14 @@
                     $ps=$_GET['passw'];
                     if($ops != "" && $ps != "")
                     {   
-                        $query1 = "SELECT * FROM login where username='$us'";
+                        $query1 = "SELECT * FROM login where username='$_SESSION['username']'";
                         $data1 = mysqli_query($con,$query);
                         if($result=mysqli_fetch_assoc($data1))
                         {
                             $pw=$result['password'];
                             if($ops==$pw)
                             {
-                                $query="UPDATE login SET password='$ps' WHERE username='$us'";
+                                $query="UPDATE login SET password='$ps' WHERE username='$_SESSION['username']'";
                                 $data=mysqli_query($con, $query);
                                 echo '<meta http-equiv="refresh" content="0; URL=../cl_staff/clstaff_account.php">';
                             }
