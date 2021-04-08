@@ -117,12 +117,12 @@
           if($result['status']=='reserved')
           {
             echo "
-                <a class='btn w-25 mb-5' href='checkin.php?id=$result[id_bill]' >checkin</a><br>";
+                <a class='btn w-25 mb-5' href='checkin.php?id=$result[id_bill]' >Check-in</a>";
           }
           else if($result['status']=='check-in')
           {
             echo "
-                <a class='btn w-25 mb-5' href='checkout.php?id=$result[id_bill]' >checkin</a>";
+                <a class='btn w-25 mb-5' href='checkout.php?id=$result[id_bill]' >Check-out</a>";
           }
                 
           if($cf > $cd)
