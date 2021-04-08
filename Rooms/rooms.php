@@ -40,7 +40,7 @@
 		<div class="left">
 			<ul>
 				<li><a href="../index.php">
-					<i class="far fa-building"></i> Hotel name</a></li>
+					<i class="far fa-building"></i> Waypoint hotel</a></li>
 		</div>
 		<div class="right">
 			<ul>
@@ -48,14 +48,14 @@
 					<?php
 						if (isset($_SESSION['username']))
 						{
-							echo "<p style='margin-right: 15px; font-size: 20px; cursor:pointer;'>";
+							echo "<p style='margin-right: 15px; font-size: 20px; color:#0082E6; cursor:pointer;'>";
 							echo $_SESSION['username'];	
    							echo " <i class='fas fa-user-alt' style='font-size: 30px;''></i><i class='fas fa-chevron-down'></i></i></p>
    							<div class='dropdown'>
 								<ul>
 									
 									<li><a href='../orders/myOrders.php'><i class='fas fa-shopping-basket'></i> Orders</a></li>
-									<li><a href='rooms.php'>
+									<li><a href='rooms.php'><i class='fas fa-angle-right'></i>
 										<i class='fas fa-bed'></i> Rooms</a></li>
 									<li><a href='../index.php?logout='1''><i class='fas fa-sign-out-alt'></i>Logout</a></li>
 								</ul>

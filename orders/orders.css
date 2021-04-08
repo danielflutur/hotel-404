@@ -10,7 +10,7 @@ html, body{
     width: 100%; 
     height: 20%; 
     background: red; 
-    background-image: url(img/final.jpg); 
+    background-image: url(../../img/final.jpg); 
     background-attachment: fixed;
 }
 
