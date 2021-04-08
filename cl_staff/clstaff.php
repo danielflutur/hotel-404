@@ -79,9 +79,13 @@
                             </tr>
                             ";
                             }
-                            else
+                            else if($result['status1']=='cleaning')
                             {                            
                                 echo "<td><a href='actualizare2.php?roomNumber=$result[roomNumber]'><button class='button' style='background-color:red ;padding: 5px 20px;  width:20%; cursor: pointer'>EXIT</button></a></td>  </tr>";
+                            }
+                            else
+                            {
+                                echo "<td><a href='#'><button class='button' style='background: transparent; border: none ;padding: 5px 20px;  width:20%; cursor: pointer'></button></a></td>  </tr>";
                             }
 
                         }
