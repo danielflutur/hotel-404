@@ -39,7 +39,6 @@
             <li><a href="#"><i class="far fa-user-circle"></i>Manage account</a></li>
             <li><a href="../index.php?logout='1'&active='1'"><i class="fas fa-sign-out-alt"></i>Log out</a></li>
         </ul>
-        </ul>
         <div class="menu">
             <div class="line1"></div>
             <div class="line2"></div>
@@ -66,7 +65,7 @@
                 <td><input type="text" id="new_pass" name="passw" placeholder="New password" required></td>
             </tr>
             <tr style="background-color: transparent; height: 80px;">
-                <td colspan="2"><button type="submit">Change</button></td>
+                <td colspan="2"><button type="submit" name="submit">Change</button></td>
             </tr>
             <?php
                 include("connection.php");
