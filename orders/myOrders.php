@@ -114,15 +114,13 @@
                 <h3 class='text-left'>Check-out date:".$result['co_date']."</h3>
                 <h3 class='text-left'>Price:".$result['price']."€/night</h3>";
                 $cf=$result['ci_date'];
-                echo $cf;
-                echo $cd;
           if($cf > $cd)
           {
                 echo "<a class='btn w-25 mb-5' href='delete.php?id=$result[id_bill]&rn=$result[roomNumber]' >Cancel</a>";
           }
           else
           {
-              echo "<a class='btn w-25 mb-5' href='#' >Cancel</a>";
+              echo "<button class='btn w-25 mb-5' onclick='old_record()' >Cancel</button>";
           }
              echo" </div>
             </div>
@@ -162,6 +160,12 @@
 			</div>
 		</div>
 	</div>
+  <script>
+    function old_record()
+    {
+      alert("Outdated record!");
+    }
+  </script>
     
     <script src="parallaxie.js"></script>
     <script>
