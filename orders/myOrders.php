@@ -114,7 +114,7 @@
                 <h3 class='text-left'>Check-out date:".$result['co_date']."</h3>
                 <h3 class='text-left'>Price:".$result['price']."€/night</h3>";
                 $cf=$result['ci_date'];
-          if($result['status']=='available')
+          if($result['status']=='reserved')
           {
             echo "
                 <a class='btn w-25 mb-5' href='checkin.php?id=$result[id_bill]' >checkin</a><br>";
