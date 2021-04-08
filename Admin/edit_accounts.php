@@ -34,7 +34,12 @@
             </tr>
             <tr>
                 <td>Role</td>
-                <td><input type="text" id="role" value="<?php echo "$rl" ?>" name="role1" required></td>
+                <td><select style="width: 80%; height: 25px;" name="role" id="class">
+                        <option value="<?php echo "$rl" ?>" disabled>Select class</option>
+                        <option value="admin" id="admin">Admin</option>
+                        <option value="guest" id="guest">Guest</option>
+                        <option value="cleaner" id="Cleaning staff">Cleaner</option>
+                    </select></td>
             </tr>
             <tr style="background-color: transparent; height: 80px;">
                 <td colspan="2"><button type="submit" name="submit">UPDATE</button></td>

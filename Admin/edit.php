@@ -29,7 +29,13 @@
             </tr>
             <tr>
                 <td>Type</td>
-                <td><input type="text" id="room_type" value="<?php echo "$ty" ?>" name="type1" required></td>
+               <td><select style="width: 80%; height: 25px;" name="type" id="class">
+                        <option value="<?php echo "$ty" ?>" disabled>Select type</option>
+                        <option value="single" id="single">Single</option>
+                        <option value="double" id="double">Double</option>
+                        <option value="triple" id="triple">Triple</option>
+                    </select></td>
+                </tr>
             </tr>
             <tr>
                 <td>Price in €/night</td>

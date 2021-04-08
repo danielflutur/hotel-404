@@ -113,7 +113,7 @@
                 </tr>
                 <tr >
                     <td>Password</td>
-                    <td><input type="text" id="pass" placeholder="Password" name="passw" required></td>
+                    <td><input type="password" id="pass" placeholder="******" name="passw" required></td>
                 </tr>
                 <tr>
                     <td>Role</td>
