@@ -76,7 +76,49 @@
 		      <h1 class="">Rooms<hr style="width: 25%;"></h1>
 	    </div>
 	 </div>
+	 <div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2" style="margin-top: 5%;">
+					<div class="row">
+						<?php
+						include("../connection.php")
+						if(isset($_POST['search'])){
+							$searchKey= $_POST['search'];
+							$sql= "SELECT *FROM rooms WHERE type LIKE '%$searchKey%'  and status='available' ";
+						}else
+    					$sql= "SELECT *FROM rooms";
 
+    					$result = mysqli_query($con,$sql);
+						?>
+						<br />
+
+						<form action="" method="POST">	
+								<input type="text" name="search" class='form-control' placeholder="Cauta un tip de camera" value="">
+								<br/>
+								<button class="btn" >Search</button>	
+						</form>
+						<br/>
+						<br/>
+					</div>
+					<table class="table table-bordered">
+						<tr>
+							<br/>
+							<th>rooomNumber</th>
+							<th>type</th>
+							<th>status</th>
+						</tr>
+						<?php while($row=mysqli_fetch_object($result)) {  ?>
+							<tr>
+								<td><?php echo $row->roomNumber ?></td>
+								<td><?php echo $row->type ?></td>
+								<td><?php echo $row->status ?></td>
+							</tr>
+						<?php }?>
+
+					</table>
+				</div>
+			</div>
+		</div>
     <div class="py-3" >
         <div class="container pt-5">
           <div class="row my-4 d-flex justify-content-center">
