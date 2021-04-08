@@ -114,12 +114,13 @@
                 <h3 class='text-left'>Check-out date:".$result['co_date']."</h3>
                 <h3 class='text-left'>Price:".$result['price']."€/night</h3>";
                 $cf=$result['ci_date'];
-          if($result['status']=='reserved')
+                $od=$result['co_date'];
+          if($result['status']=='reserved' && $cf > $cd)
           {
             echo "
                 <a class='btn w-25 mb-5' href='checkin.php?id=$result[id_bill]' >Check-in</a>";
           }
-          else if($result['status']=='check-in')
+          else if($result['status']=='check-in' && $cd <= $od)
           {
             echo "
                 <a class='btn w-25 mb-5' href='checkout.php?id=$result[id_bill]' >Check-out</a>";

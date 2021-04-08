@@ -4,7 +4,7 @@
     error_reporting(0);
 
     $id=$_GET['id'];
-    $query= "UPDATE bill SET status='check-out' WHERE id='$id'";
+    $query= "UPDATE bill SET status='check-out' WHERE id_bill='$id'";
 
     $data=mysqli_query($con,$query);
 
