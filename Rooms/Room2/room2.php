@@ -66,7 +66,7 @@
                 <ul>
                   
                   <li><a href='../../orders/myOrders.php'><i class='fas fa-shopping-basket'></i> Orders</a></li>
-                  <li><a href='../rooms.php'><i class='fas fa-angle-right'></i>
+                  <li><a href='../rooms.php'>
               <i class='fas fa-bed'></i> Rooms</a></li>
                   <li><a href='../../index.php?logout='1''><i class='fas fa-sign-out-alt'></i>Logout</a></li>
                 </ul>
