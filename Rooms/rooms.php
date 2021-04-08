@@ -93,7 +93,7 @@
 						<br />
 
 						<form action="" method="POST">	
-								<input type="text" name="search" class='form-control' placeholder="Cauta un tip de camera" value="">
+								<input type="text" name="search" class='form-control' placeholder="Search a room type" value="">
 								<br/>
 								<button class="btn" >Search</button>	
 						</form>
