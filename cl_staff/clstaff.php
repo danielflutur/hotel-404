@@ -79,7 +79,7 @@
                             </tr>
                             ";
                             }
-                            else if($result['status1']=='cleaning')
+                            else
                             {
     
                                 
