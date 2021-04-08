@@ -115,7 +115,7 @@
                 </tr>
                 <tr>
                     <td>Type</td>
-                    <td><select name="type" id="class">
+                    <td><select style="width: 80%; height: 25px;" name="type" id="class">
                         <option value="Class" disabled>Select class</option>
                         <option value="admin" id="admin">Admin</option>
                         <option value="guest" id="guest">Guest</option>
