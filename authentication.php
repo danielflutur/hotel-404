@@ -46,8 +46,7 @@ if(isset($_POST["btnLogin"]))
             if($row["role"] == "cleaner")
             {
                 $_SESSION['username'] = $username;
-                //echo "Cleaners";
-                header('Location: index.php');
+                header('Location: cl_staff/clstaff.php');
             }
         
         }
