@@ -10,7 +10,7 @@
 
     if($data)
     {
-        echo '<meta http-equiv="refresh" content="0; URL=../clstaff/clstaff.php">';
+        echo '<meta http-equiv="refresh" content="0; URL=../cl_staff/clstaff.php">';
         echo 'Update';
     }
     else
