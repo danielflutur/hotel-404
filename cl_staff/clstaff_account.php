@@ -35,8 +35,8 @@
             ?>
         </div>
         <ul class="links">
-            <li><a href="../Admin/AdminRooms.php"><i class="fas fa-bed"></i>Rooms</a></li>
-            <li><a href="#"><i class="far fa-user-circle"></i>Manage account</a></li>
+            <li><a href="clstaff.php"><i class="fas fa-bed"></i>Rooms</a></li>
+            <li><a href="clstaff_account.php"><i class="far fa-user-circle"></i>Manage account</a></li>
             <li><a href="../index.php?logout='1'&active='1'"><i class="fas fa-sign-out-alt"></i>Log out</a></li>
         </ul>
         <div class="menu">
