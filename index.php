@@ -85,7 +85,6 @@
 		<div class="carousel-inner">
 			<div class="carousel-item active first-slide">
 				<div class="carousel-caption d-none d-md-block">
-					<br><br><br><br>
 					<h5 class="animated fadeIn" style="animation-delay: 1s">Waypoint hotel
 						<hr class="h-rule">
 					</h5>
@@ -98,7 +97,6 @@
 			</div>
 			<div class="carousel-item second-slide">
 				<div class="carousel-caption d-none d-md-block">
-					<br><br><br><br>
 					<h5 class="animated fadeInUp" style="animation-delay: 1s">Restaurant
 						<hr class="h-rule">
 					</h5>
@@ -111,13 +109,12 @@
 			</div>
 			<div class="carousel-item third-slide">
 				<div class="carousel-caption d-none d-md-block">
-					<br><br><br><br>
 					<h5 class="animated zoomIn" style="animation-delay: 1s">Activities
 						<hr class="h-rule">
 					</h5>
 					<p class="animated fadeInLeft" style="animation-delay: 2s">We provide a bunch of different offers
 						that may be of an interest to your. At our hotels we will find you any type of entertainment
-						taking into account your wishes./p>
+						taking into account your wishes.</p>
 					
 				</div>
 			</div>

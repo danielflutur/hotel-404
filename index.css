@@ -5,7 +5,7 @@
 
 
 .carousel-item {
-	height: 60vh;
+	height: 70vh;
 	min-height: 300px;
 }
 .carousel-caption {
@@ -16,7 +16,7 @@
 	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	margin-top: 25px;
+	margin-top: 35px;
 	font-family: "Miss Farajadose";
 }
 .carousel-caption p {
