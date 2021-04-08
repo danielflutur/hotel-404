@@ -29,7 +29,7 @@
             </tr>
             <tr>
                 <td>Type</td>
-               <td><select style="width: 80%; height: 25px;" name="type" value="<?php echo "$ty" ?>" id="class">
+               <td><select style="width: 80%; height: 25px;" name="type1" value="<?php echo "$ty" ?>" id="class">
                         <option value="class" disabled>Select type</option>
                         <option value="single" id="single">Single</option>
                         <option value="double" id="double">Double</option>

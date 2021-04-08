@@ -34,7 +34,7 @@
             </tr>
             <tr>
                 <td>Role</td>
-                <td><select style="width: 80%; height: 25px;" name="role" value="<?php echo "$cl" ?>" id="class">
+                <td><select style="width: 80%; height: 25px;" name="role1" value="<?php echo "$cl" ?>" id="class">
                         <option value="class>" disabled>Select class</option>
                         <option value="admin" id="admin">Admin</option>
                         <option value="guest" id="guest">Guest</option>
