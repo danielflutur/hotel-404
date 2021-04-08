@@ -75,7 +75,7 @@
                             if($result['status1']=='empty')
                             {
                             
-                            echo "<td><a href='actualizare_status.php?roomNumber=$result[roomNumber]'><button class='button' style='background-color:green ;padding: 5px 20px;  width:20%; cursor: pointer'>Cleaned</button></a></td>                                 
+                            echo "<td><a href='actualizare_status.php?roomNumber=$result[roomNumber]'><button class='button' style='background-color:green ;padding: 5px 20px;  width:20%; cursor: pointer'>Clea</button></a></td>                                 
                             </tr>
                             ";
                             }
@@ -85,7 +85,7 @@
                             }
                             else
                             {
-                                echo "<td><a href='#'><button class='button' style='background: transparent; border: none ;padding: 5px 20px;  width:20%; cursor: pointer'></button></a></td>  </tr>";
+                                echo "<td><a href='#'><button class='button' style='background: transparent; border: none ;padding: 5px 20px;  width:20%;'></button></a></td>  </tr>";
                             }
 
                         }

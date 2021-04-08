@@ -125,6 +125,10 @@
             echo "
                 <a class='btn w-25 mb-5' href='checkout.php?id=$result[id_bill]' >Check-out</a>";
           }
+          else
+          {
+            echo "<button class='btn w-25 mb-5' onclick='old_record()' >Check-in</button>";
+          }
                 
           if($cf > $cd)
           {
