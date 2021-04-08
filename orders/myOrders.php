@@ -90,7 +90,6 @@
       $data = mysqli_query($con,$query);
       while($result=mysqli_fetch_assoc($data))
       { 
-        sort($result);
         echo "<div class='py-1' style='transform: translateY(10%);'>
           <div class='container'>
             <div class='row'>";
