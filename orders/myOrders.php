@@ -86,7 +86,7 @@
     {
       $us=$_SESSION['username'];
       $cd=date("Y-m-d H:i:s");
-      $query="SELECT * FROM bill WHERE username='$us' and status='reserved'";
+      $query="SELECT * FROM bill WHERE username='$us' and status='reserved' or status='check-in' or status='check-out'";
       $data = mysqli_query($con,$query);
       while($result=mysqli_fetch_assoc($data))
       { 
