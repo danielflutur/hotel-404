@@ -3,7 +3,7 @@
     include("../connection.php");
     error_reporting(0);
 
-    $$id=$_GET['id'];
+    $id=$_GET['id'];
     $rn=$_GET['rn'];
     $query= "UPDATE rooms SET status='check-out' WHERE roomNumber='$rn'";
     $query2= "UPDATE bill SET status='check-out' WHERE id_bill='$id'";
