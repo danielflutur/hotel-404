@@ -24,6 +24,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+	
 <head>
 	<meta charset="UTF-8">
 	<title>Waypoint hotel</title>
@@ -34,8 +35,12 @@
 	<link href="index.css" rel="stylesheet">
 	<link rel="stylesheet" href="navbar.css">
 	<link rel="stylesheet" href="css/all.min.css">
+	<script src="https://statics.teams.cdn.office.net/sdk/v1.7.0/js/MicrosoftTeams.min.js"></script>
 </head>
 
+	<script>
+		microsoftTeams.initialize()
+	</script>
 
 <body>
 	<nav>
